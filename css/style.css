@@ -419,9 +419,13 @@ h2{
 .slider_section .detail_box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: red;
-  color: #ffffff;
-  border-radius: 35px;
+  background-color: #000;
+  border: 3px solid #FFBF00;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px #FFBF00;
   margin-top: 35px;
   
 }
@@ -429,7 +433,9 @@ h2{
 
 
 .slider_section .detail_box a:hover {
-  background-color: purple;
+  background-color: white;
+  color: black;
+  transform: translate(5px, -5px);
 }
 
 
@@ -589,13 +595,19 @@ h2{
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: red;
-  color: #ffffff;
-  border-radius: 35px;
+  background-color: #000;
+  border: 3px solid #FFBF00;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px #FFBF00;
 }
 
 .service_section .btn-box a:hover {
-  background-color: purple;
+  background-color: #fff;
+  color: black;
+  transform: translate(5px, -5px);
 }
 
 .about_section {
@@ -627,8 +639,8 @@ h2{
   pointer-events: none;
   border: 7px solid;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  width: 360px; 
-  height: 360px;
+  width: 360px;
+  height: 360px; 
   float: left;
   border-radius: 60% 40% 30% 70% / 70% 30% 70% 40%;
   animation: morph 10s ease-in-out infinite;
@@ -664,10 +676,18 @@ h2{
 @media (max-width: 667px) {
   .img-box.b1, .img-box.b2 {
     width: 100%;
-    height: auto;
+   
     float: none;
     margin: 0 auto;
   }
+  
+  .img-box.b2 {
+    height: 100%;
+    
+  }
+
+  
+    
 }
 
 
@@ -679,6 +699,7 @@ h2{
  
   margin-left: auto;
   margin-top: -5%;
+ 
 }
 
 .about_section .img_container .img-box img {
@@ -696,14 +717,20 @@ h2{
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: red;
-  color: #ffffff;
-  border-radius: 5px;
+  background-color: #000;
+  border: 3px solid #FFBF00;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px #FFBF00;
   margin: 25px 0 45px 0;
 }
 
 .about_section .detail-box a:hover {
-  background-color: purple;
+  background-color: #fff;
+  color: black;
+  transform: translate(5px, -5px);
 }
 
 .blog_section .heading_container {
@@ -905,6 +932,9 @@ h2{
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .about_section .img_container .img-box.b1 {
+    width: 100%;
+  }
 }
 
 /* Estilos existentes */
@@ -919,7 +949,7 @@ h2{
 }
 
 /* SETA PARA CIMA */
-/* SETA PARA CIMA */
+
 #backToTopBtn {
   background-color: #FFBF00;
   display: none; /* Inicialmente oculto */
@@ -941,9 +971,11 @@ h2{
 }
 
 #backToTopBtn:hover {
-  background-color: #000000; /* Cor de fundo ao passar o mouse */
+  background-color: black;
+
   color: #FFBF00;
-  box-shadow: #FFBF00;
+  border-radius: 50%; /* Forma circular */
+  transform: translate(5px, -5px);
   transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
 }
 
